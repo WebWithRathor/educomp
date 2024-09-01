@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -19,9 +21,10 @@
     </div>
   </nav>
   <div class="main">
-    <div class="animate-circle h-40 md:h-96 scale-[1.2] z-[99] aspect-square shadow-inner shadow-[#68DA68] border-2 rounded-full fixed top-1/2 md:top-[35%] left-[43.7%] border-[#2BAF2B]"></div>
+    
     <div class="frontWrapper relative  h-[200vh]">
       <div id="frontpage" class=" h-screen overflow-hidden w-full sticky z-0 bg-black text-white top-0 px-10 pt-24 flex flex-col">
+        <div class="animate-circle h-40 md:h-96 scale-[1.2] z-[99] aspect-square shadow-inner shadow-[#68DA68] border-2 rounded-full absolute top-1/2 md:top-[35%] left-[43.7%] border-[#2BAF2B]"></div>
         <video autoplay muted loop class="absolute opacity-35 top-0 left-0 z-[-1] w-full h-full object-cover" src="./assets/videos/4494802-uhd_3840_2160_25fps.mp4"></video>
         <div class="self-end md:w-[40%] text-right">
           <p class=" text-sm md:text-md mt-5 font-[jetbrain] text-right">We provide cutting-edge technology and tools to enhance classroom learning, streamline administrative tasks, and support educators through comprehensive e-learning platforms and professional development programs.</p>
@@ -38,11 +41,11 @@
     <section class="swiper-page">
       <div class="top w-full pl-5 sm:py-10 sm:pl-20 flex flex-col sm:items-end sm:flex-row py-10 gap-10">
         <div class="text-div w-full h-full">
-          <h1 class="text-4xl  mt-10 sm:mt-0 font-[hepta-semibold]">Transformative <br> Educational Solutions</h1>
-          <p class="text-sm my-3 font-[hepta-reg] font-bold">We provide cutting-edge technology and tools to enhance
+          <h1 class="text-4xl  mt-10 sm:mt-0 font-[hepta]">Transformative <br> Educational Solutions</h1>
+          <p class="text-sm my-3 font-[jetbrain] font-bold">We provide cutting-edge technology and tools to enhance
             classroom learning, streamline administrative tasks, and support
             educators through comprehensive e-learning platforms and professional development programs.</p>
-          <button class="bg-[rgba(104,218,104)] rounded-3xl px-10 py-2 uppercase mt-1">
+          <button class="bg-[rgba(104,218,104)] font-[hepta] rounded-3xl px-10 py-2 uppercase mt-1">
             programs
           </button>
         </div>
@@ -78,7 +81,7 @@
         </div>
       </div>
       <div class="parallax-container relative h-[300vh]">
-        <div class="parallax-top sticky top-0 h-screen px-5 sm:px-10 mt-10 w-[100vw] py-[20vh] flex items-end md:justify-center">
+        <div class="parallax-top sticky overflow-hidden top-0 h-screen px-5 sm:px-10 mt-10 w-[100vw] py-[20vh] flex items-end md:justify-center">
           <div class="center-text-div">
             <h1 class="text-6xl text-start md:text-center sm:text-9xl font-[hepta-semiBold] font-bold">
               <span class="text-stroke text-transparent">Catere<span class="text-green-500">d</span></span> <br>
