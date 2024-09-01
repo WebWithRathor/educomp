@@ -18,6 +18,13 @@ html, body{
     src: url('./assets/fonts/JetBrainsMono-VariableFont_wght.ttf');
 }
 
+.starWrapper{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 52%, 60% 52%,52.7% 63.6%, 50% 100%,47.3% 63.6%, 40% 52%, 0% 52%);
+}
+
+.star{
+    clip-path: path("M152.174 0L193.093 119.705L303.674 164L193.093 208.295L152.174 328L111.255 208.295L0.674072 164L111.255 119.705L152.174 0Z");
+}
 /* colors */
 
 /* #2BAF2B */
