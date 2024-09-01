@@ -1,17 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: hepta-semiBold;
     src: url('./HeptaSlab-Bold.ttf');
 }
+
 @font-face {
     font-family: hepta-reg;
     src: url(./HeptaSlab-Regular.ttf);
 }
-html, body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
@@ -30,17 +34,17 @@ html, body{
 .swiper {
     width: 100%;
     height: 100%;
-    /* background-color: blue; */
 }
 
 .swiper-slide {
-    width: fit-content;
+    width: fit-content !important;
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.text-stroke{
-    font-family: 'Courier New', Courier, monospace;
+
+.text-stroke {
+    color: white;
     -webkit-text-stroke: 2px black;
 }
