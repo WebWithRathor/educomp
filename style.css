@@ -9,6 +9,25 @@ html, body{
     width: 100%;
 }
 
+@font-face {
+    font-family: hepta;
+    src: url('./assets/fonts/HeptaSlab-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: jetbrain;
+    src: url('./assets/fonts/JetBrainsMono-VariableFont_wght.ttf');
+}
+
+.front-circle{
+    opacity: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #2BAF2B;
+    position: absolute;
+}
+
 /* colors */
 
 /* #2BAF2B */
