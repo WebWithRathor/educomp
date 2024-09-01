@@ -3,7 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: hepta-semiBold;
+    src: url('./HeptaSlab-Bold.ttf');
+}
+@font-face {
+    font-family: hepta-reg;
+    src: url(./HeptaSlab-Regular.ttf);
+}
 html, body{
     height: 100%;
     width: 100%;

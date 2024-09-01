@@ -1,14 +1,87 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  <h1 class="text-3xl  font-bold underline">
-    Hello world!
-  </h1>
+  <div class="h-[100vh] w-full"></div>
+  <footer class="w-full relative bg-white text-black px-5 sm:px-10 md:px-12 flex flex-col justify-end">
+    <div class="top-section font-[hepta-reg] mt-[10vh] w-full h-[55vh] sm:h-[40vh] flex flex-col justify-center sm:flex-row sm:justify-between sm:items-start sm:gap-10 gap-5">
+      <div class="top-half flex sm:flex-row flex-row-reverse items-start justify-between">
+        <li id="li-1" class="w-fit relative flex flex-col justify-center gap-1">
+          <h1 class="li-1 text-2xl font-semibold capitalize font-[hepta-semiBold] whitespace-nowrap">Quick Links</h1>
+          <a class="li-1 text-lg capitalize font-light" href="">home</a>
+          <a class="li-1 text-lg capitalize font-light" href="">about</a>
+          <a class="li-1 text-lg capitalize font-light" href="">resources</a>
+          <a class="li-1 text-lg capitalize font-light" href="">careers</a>
+        </li>
+        <li class="w-fit relative flex sm:hidden flex-col justify-center gap-1">
+          <h1 class="li-2 text-2xl font-semibold capitalize font-[hepta-semiBold]">General</h1>
+          <a class="li-2 text-lg capitalize font-light" href="#">FAQs</a>
+          <a class="li-2 text-lg capitalize font-light" href="#">Font License</a>
+          <a class="li-2 text-lg capitalize font-light" href="#">EULA</a>
+        </li>
+      </div>
+      <li id="li-2" class="w-fit relative hidden sm:flex flex-col justify-center gap-1">
+        <h1 class="li-2 text-2xl font-semibold capitalize font-[hepta-semiBold]">General</h1>
+        <a class="li-2 text-lg capitalize font-light" href="#">FAQs</a>
+        <a class="li-2 text-lg capitalize font-light" href="#">Font License</a>
+        <a class="li-2 text-lg capitalize font-light" href="#">EULA</a>
+      </li>
+      <li id="li-3" class="w-fit relative flex flex-col justify-center gap-1">
+        <h1 class="li-3 text-2xl font-semibold capitalize font-[hepta-semiBold] whitespace-nowrap">investor relations</h1>
+        <a class="li-3 text-lg capitalize font-light" href="">overview</a>
+        <a class="li-3 text-lg capitalize font-light" href="">governance</a>
+        <a class="li-3 text-lg capitalize font-light" href="">annual reports</a>
+        <a class="li-3 text-lg capitalize font-light" href="">more</a>
+      </li>
+    </div>
+    <div class="middle-section w-full h-[15vh] sm:h-[25vh] border-b-2 border-black overflow-hidden flex flex-col items-center justify-end">
+      <h1 id="educamp-head" class="text-[17vw] font-[hepta-semiBold] sm:text-[16vw] whitespace-nowrap leading-none translate-y-[22%] text-center max-w-full font-bold tracking-tighter sm:tracking-wide">educomp</h1>
+    </div>
+    <div class="bottom-section flex flex-col sm:flex-row-reverse sm:items-center max-h-full justify-between py-5">
+      <div class="footer_socials w-fit flex items-start gap-2">
+        <a class="footer_social-item w-10">
+          <div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 25 25" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.4531 3.03711H8.45312C5.6917 3.03711 3.45312 5.27569 3.45312 8.03711V16.0371C3.45312 18.7985 5.6917 21.0371 8.45312 21.0371H16.4531C19.2145 21.0371 21.4531 18.7985 21.4531 16.0371V8.03711C21.4531 5.27569 19.2145 3.03711 16.4531 3.03711ZM19.7031 16.0371C19.6976 17.8297 18.2457 19.2816 16.4531 19.2871H8.45312C6.66048 19.2816 5.20861 17.8297 5.20312 16.0371V8.03711C5.20861 6.24446 6.66048 4.7926 8.45312 4.78711H16.4531C18.2457 4.7926 19.6976 6.24446 19.7031 8.03711V16.0371ZM17.2031 8.28711C17.7554 8.28711 18.2031 7.83939 18.2031 7.28711C18.2031 6.73483 17.7554 6.28711 17.2031 6.28711C16.6508 6.28711 16.2031 6.73483 16.2031 7.28711C16.2031 7.83939 16.6508 8.28711 17.2031 8.28711ZM12.4531 7.53711C9.96784 7.53711 7.95312 9.55183 7.95312 12.0371C7.95312 14.5224 9.96784 16.5371 12.4531 16.5371C14.9384 16.5371 16.9531 14.5224 16.9531 12.0371C16.9558 10.8428 16.4825 9.69668 15.638 8.85219C14.7935 8.0077 13.6474 7.53445 12.4531 7.53711ZM9.70312 12.0371C9.70312 13.5559 10.9343 14.7871 12.4531 14.7871C13.9719 14.7871 15.2031 13.5559 15.2031 12.0371C15.2031 10.5183 13.9719 9.28711 12.4531 9.28711C10.9343 9.28711 9.70312 10.5183 9.70312 12.0371Z"
+                fill="currentColor"></path>
+            </svg></div>
+        </a>
+        <a class="footer_social-item w-10">
+          <div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 25 25" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.4512 12.3414C22.4512 6.78478 17.9741 2.28027 12.4512 2.28027C6.92832 2.28027 2.45117 6.78478 2.45117 12.3414C2.45117 17.3631 6.10801 21.5255 10.8887 22.2803V15.2497H8.34961V12.3414H10.8887V10.1248C10.8887 7.60323 12.3817 6.21039 14.6658 6.21039C15.76 6.21039 16.9043 6.4069 16.9043 6.4069V8.88288H15.6434C14.4012 8.88288 14.0137 9.65849 14.0137 10.4542V12.3414H16.7871L16.3438 15.2497H14.0137V22.2803C18.7944 21.5255 22.4512 17.3633 22.4512 12.3414Z"
+                fill="currentColor"></path>
+            </svg></div>
+        </a>
+        <a class="footer_social-item w-10">
+          <div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 25 25" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.6292 4.28027H20.3893L14.3592 11.0577L21.4531 20.2803H15.8987L11.5482 14.6869L6.57035 20.2803H3.80856L10.2583 13.0311L3.45312 4.28027H9.14857L13.081 9.39289L17.6292 4.28027ZM16.6604 18.6557H18.1899L8.31753 5.81955H6.67632L16.6604 18.6557Z"
+                fill="currentColor"></path>
+            </svg></div>
+        </a>
+      </div>
+      <div class="copyright mt-10 sm:mt-0">
+        <h1 class="text-sm text-start capitalize">
+          copyright © 2024 educomp all rights reserved | 
+          <span class="text-green-500"> Powered by education pvt. ltd.</span>
+        </h1>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
