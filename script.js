@@ -1,84 +1,24 @@
-function footerAnimation() {
-    document.querySelectorAll('a').forEach(e => {
-        e.addEventListener('click', (event) => {
-            event.preventDefault();
-            console.log('clicked');
-        })
-        e.classList.add('hover')
-    })
-    const large_text = document.getElementById('educamp-head')
-    const letters = large_text.textContent.split('')
-    let clutter = "";
-    letters.forEach(e => {
-        if (e === 'e') e = 'E'
-        clutter += `<span class="">${e}</span>`;
-    })
-    large_text.innerHTML = clutter;
-    gsap.set('#educamp-head span', { display: 'inline-block' })
-    if (window.innerWidth > 640) {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: 'footer',
-                start: 'top 60%',
-                end: '20% 35%',
-                scrub: 1.5,
-                // markers: true,
-            }
-        })
-        tl.from('.li-1', {
-            opacity: 0,
-            x: -100,
-            duration: 1,
-            stagger: .1,
-        }, 'a')
-            .from('.li-2', {
-                opacity: 0,
-                y: 100,
-                duration: 1,
-                stagger: .1,
-            }, 'a')
-            .from('.li-3', {
-                opacity: 0,
-                x: 100,
-                duration: 1,
-                stagger: .1,
-            }, 'a')
-    } else {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: 'footer',
-                start: 'top 60%',
-                end: '20% 35%',
-                scrub: 1,
-                // markers: true,
-            }
-        })
-        tl.from('.li-1', {
-            x: 100,
-            opacity: 0,
-            stagger: .1,
-        }, 'a')
-            .from('.li-2', {
-                opacity: 0,
-                x: -100,
-                stagger: .1,
-            }, 'a')
-            .from('.li-3', {
-                opacity: 0,
-                y: 100,
-                stagger: .1,
-            }, 'a')
-    }
-    gsap.from('#educamp-head span', {
-        transform: 'translateY(100%)',
-        stagger: 0.05,
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    slidesCentered : 'auto',
+    slidesPerView: "1.3",
+    loop : true,
+});
+function parallaxeffect() {
+    const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: 'footer',
-            start: 'top 30%',
-            end: '15% 30%',
-            scrub: 2,
+            trigger: ".parallax-container",
+            start: "top 90%",
+            end: "90% top",
+            scrub: true,
             // markers: true,
-        }
-    })
+        },
+    });
+    document.querySelectorAll('.floating-div').forEach(e => {
+        tl.from(e, {
+            y: e.dataset.y,
+            stagger: 0.2,
+        }, 'a');
+    });
 }
-footerAnimation();
+parallaxeffect();

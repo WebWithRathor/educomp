@@ -26,3 +26,21 @@ html, body{
 
 /* #770BE5 */
 /* #9332F5 */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.swiper-slide {
+    width: fit-content;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-stroke{
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-text-stroke: 2px black;
+}
