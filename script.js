@@ -1,84 +1,57 @@
-function footerAnimation() {
-    document.querySelectorAll('a').forEach(e => {
-        e.addEventListener('click', (event) => {
-            event.preventDefault();
-            console.log('clicked');
-        })
-        e.classList.add('hover')
+
+
+function resourceCardAnimation() {
+
+    [
+        "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://plus.unsplash.com/premium_photo-1711051475177-1ebe1594a9c3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1454922069690-ed3f6fcddb2b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        // "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        // "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
+        "https://plus.unsplash.com/premium_photo-1682824038225-834e4244f1e6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ].forEach((img, i,arr) => {
+        document.querySelector("#card_wrap").innerHTML += `
+        <div style="transform-origin:center 30px; transition:transform-origin 2s ease" class="card -translate-y-[20%] shadow-sm absolute cursor-pointer w-[17vw] h-80 top-0  rotate-[${(360/arr.length) * (i+1) }deg] rounded-md overflow-hidden">
+        <img class="absolute w-[3vw] left-[3%] top-[5%]" src="./Star.png" alt="">
+        <div class="clip-as-card w-full h-full bg-red-50 rounded-md">
+          <img class="h-full w-full object-cover" src="${img}" alt="">
+        </div>
+      </div>
+        `
+
+
     })
-    const large_text = document.getElementById('educamp-head')
-    const letters = large_text.textContent.split('')
-    let clutter = "";
-    letters.forEach(e => {
-        if (e === 'e') e = 'E'
-        clutter += `<span class="">${e}</span>`;
-    })
-    large_text.innerHTML = clutter;
-    gsap.set('#educamp-head span', { display: 'inline-block' })
-    if (window.innerWidth > 640) {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: 'footer',
-                start: 'top 60%',
-                end: '20% 35%',
-                scrub: 1.5,
-                // markers: true,
-            }
-        })
-        tl.from('.li-1', {
-            opacity: 0,
-            x: -100,
-            duration: 1,
-            stagger: .1,
-        }, 'a')
-            .from('.li-2', {
-                opacity: 0,
-                y: 100,
-                duration: 1,
-                stagger: .1,
-            }, 'a')
-            .from('.li-3', {
-                opacity: 0,
-                x: 100,
-                duration: 1,
-                stagger: .1,
-            }, 'a')
-    } else {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: 'footer',
-                start: 'top 60%',
-                end: '20% 35%',
-                scrub: 1,
-                // markers: true,
-            }
-        })
-        tl.from('.li-1', {
-            x: 100,
-            opacity: 0,
-            stagger: .1,
-        }, 'a')
-            .from('.li-2', {
-                opacity: 0,
-                x: -100,
-                stagger: .1,
-            }, 'a')
-            .from('.li-3', {
-                opacity: 0,
-                y: 100,
-                stagger: .1,
-            }, 'a')
-    }
-    gsap.from('#educamp-head span', {
-        transform: 'translateY(100%)',
-        stagger: 0.05,
+
+
+    let tl = gsap.timeline({
+        // delay:2,
         scrollTrigger: {
-            trigger: 'footer',
-            start: 'top 30%',
-            end: '15% 30%',
-            scrub: 2,
+            trigger: "#resources",
+            start: "top 20%",
             // markers: true,
         }
     })
+
+    tl
+ 
+    .to(".card",{
+        transformOrigin: "center 800px",
+        rotate: "+=360",
+        ease: "linear",
+        duration: 10,
+        repeat: -1,
+    })
+
+
+
+
+
 }
-footerAnimation();
+
+resourceCardAnimation()

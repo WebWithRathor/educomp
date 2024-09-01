@@ -16,6 +16,26 @@ html, body{
     width: 100%;
 }
 
+.clip-as-card{
+    clip-path: url("#card-clippy");
+    /* clip-path: p; */
+}
+
+#res_title_stroke{
+    z-index: 99999;
+
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    background: transparent;
+    background: #ffffff2c;
+    /* background: #fff; */
+    /* background: #000; */
+    background-clip: text;
+
+}
+
+
+
 /* colors */
 
 /* #2BAF2B */
