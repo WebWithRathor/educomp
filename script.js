@@ -1,4 +1,11 @@
-function footerAnimation(){
+function footerAnimation() {
+    document.querySelectorAll('a').forEach(e => {
+        e.addEventListener('click', (event) => {
+            event.preventDefault();
+            console.log('clicked');
+        })
+        e.classList.add('hover')
+    })
     const large_text = document.getElementById('educamp-head')
     const letters = large_text.textContent.split('')
     let clutter = "";
@@ -8,7 +15,7 @@ function footerAnimation(){
     })
     large_text.innerHTML = clutter;
     gsap.set('#educamp-head span', { display: 'inline-block' })
-    if(window.innerWidth > 640){
+    if (window.innerWidth > 640) {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: 'footer',
@@ -21,22 +28,22 @@ function footerAnimation(){
         tl.from('.li-1', {
             opacity: 0,
             x: -100,
-            duration : 1,
+            duration: 1,
             stagger: .1,
         }, 'a')
             .from('.li-2', {
                 opacity: 0,
                 y: 100,
-                duration : 1,
+                duration: 1,
                 stagger: .1,
             }, 'a')
             .from('.li-3', {
                 opacity: 0,
                 x: 100,
-                duration : 1,
+                duration: 1,
                 stagger: .1,
             }, 'a')
-    }else{
+    } else {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: 'footer',
