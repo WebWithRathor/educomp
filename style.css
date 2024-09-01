@@ -9,6 +9,15 @@ html, body{
     width: 100%;
 }
 
+@font-face {
+    font-family: hepta;
+    src: url('./assets/fonts/HeptaSlab-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: jetbrain;
+    src: url('./assets/fonts/JetBrainsMono-VariableFont_wght.ttf');
+}
+
 /* colors */
 
 /* #2BAF2B */

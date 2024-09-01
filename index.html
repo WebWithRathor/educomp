@@ -1,14 +1,32 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  <h1 class="text-3xl  font-bold underline">
-    Hello world!
-  </h1>
+  <div class="main">
+    <div class="animate-circle h-40 md:h-96 scale-[1.2] aspect-square border-2 rounded-full fixed top-1/2 md:top-[35%] left-[43.7%] border-[#2BAF2B]"></div>
+    <div class="frontWrapper relative  h-[200vh]">
+      <div id="frontpage" class=" h-screen overflow-hidden w-full sticky top-0 px-10 pt-24 flex flex-col">
+        <p class="self-end text-sm md:text-md md:w-[35%] mt-5 font-[jetbrain]">We provide cutting-edge technology and tools to enhance classroom learning, streamline administrative tasks, and support educators through comprehensive e-learning platforms and professional development programs.</p>
+        <div class="heads font-[hepta] mt-32">
+          <h1 class=" leading-none text-[12vw] md:text-[10vw] ">Inspired by</h1>
+          <h1 class="  leading-none mt-4 text-[7vw] md:text-[3vw]">Education,</h1>
+          <h1 class=" my-3 leading-none text-[7vw] md:text-[3vw]">Fueled by</h1>
+          <h1 class="  leading-none text-[7vw] md:text-[3vw]">Innovation</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
