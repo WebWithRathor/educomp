@@ -19,14 +19,14 @@ function SwiperAndParallaxEffect() {
         });
         document.querySelectorAll('.floating-div').forEach(e => {
             tl.to(e, {
-                x : e.dataset.x,
+                // x : e.dataset.x,
                 y: e.dataset.y,
                 stagger: 0.2,
             }, 'a');
         });
         tl.to('.parallax-top',{
-            y : '-25%',
-            opacity : .0,
+            y : '-15%',
+            opacity : .5,
         },'a')
     }
     parallax();
