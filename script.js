@@ -1,4 +1,4 @@
-function SwiperAndParallaxeffect() {
+function SwiperAndParallaxEffect() {
     function swiper(){
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 20,
@@ -30,4 +30,4 @@ function SwiperAndParallaxeffect() {
     }
     parallax();
 }
-SwiperAndParallaxeffect();
+SwiperAndParallaxEffect();
