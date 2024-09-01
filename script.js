@@ -83,7 +83,7 @@ function practice() {
             scroller: 'body',
             trigger: '#practice',
             start: 'top 0%',
-            end: 'top -100%',
+            end: 'top -200%',
             scrub: 1,
         }
     })
