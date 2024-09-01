@@ -72,7 +72,7 @@ function practice() {
 
                   </div>
                   <div class="text px-5 text-center flex flex-col justify-center items-center gap-2 ">
-                    <h2 class="text-5xl font-[hepta] font-semibold">${item.heading}</h2>
+                    <h2 class="text-5xl font-[hepta] font-semibold relative"><div class="circle absolute -top-2/3 left-0 h-20 aspect-square rounded-full border-2 border-[#68DA68] -translate-x-1/2"></div>${item.heading}</h2>
                     <p class="font-[jetbrain] px-3">${item.para}</p>
                   </div>
                 </div>`
