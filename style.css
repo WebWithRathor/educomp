@@ -20,6 +20,10 @@ html, body{
     clip-path: url("#card-clippy");
     /* clip-path: p; */
 }
+.clip-as-round-star{
+    clip-path: url("#star-clippy");
+
+}
 
 #res_title_stroke{
     z-index: 99999;
