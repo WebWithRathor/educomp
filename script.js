@@ -14,11 +14,12 @@ function SwiperAndParallaxEffect() {
                 start: "top 100%",
                 end: "100% top",
                 scrub: true,
-                markers: true,
+                // markers: true,
             },
         });
         document.querySelectorAll('.floating-div').forEach(e => {
             tl.to(e, {
+                x : e.dataset.x,
                 y: e.dataset.y,
                 stagger: 0.2,
             }, 'a');
