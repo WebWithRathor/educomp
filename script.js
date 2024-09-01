@@ -1,10 +1,10 @@
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 0,
-    slidesCentered : 'auto',
-    slidesPerView: "1.3",
-    loop : true,
-});
-function parallaxeffect() {
+function SwiperAndParallaxeffect() {
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        slidesCentered: 'auto',
+        slidesPerView: "1.3",
+        loop: true,
+    });
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: ".parallax-container",
@@ -21,4 +21,4 @@ function parallaxeffect() {
         }, 'a');
     });
 }
-parallaxeffect();
+SwiperAndParallaxeffect();
